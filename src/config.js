@@ -9,18 +9,18 @@ const { NETWORK } = require(path.join(basePath, "constants/network.js"));
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "RetroMobsters";
+const description = "RetroMobsters";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
+      address: "",
+      share: 1,
     },
   ],
 };
@@ -28,15 +28,18 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "1" },
+      { name: "2" },
+      { name: "3" },
+      { name: "4" },
+      // { name: "5" },
+      // { name: "6" },
+      // { name: "7" },
+      // { name: "8" },
+      // { name: "9" },
+      // { name: "10" },
     ],
   },
 ];
@@ -46,8 +49,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 702,
+  height: 666,
 };
 
 const gif = {
